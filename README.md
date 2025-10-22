@@ -1,5 +1,7 @@
 # ComfoConnect Home Assistant Custom Component
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+
 This custom component for Home Assistant provides support for Zehnder ComfoAir Q350/450/600 ventilation systems via the ComfoConnect LAN C bridge.
 
 ## Credits
