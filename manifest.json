@@ -1,0 +1,12 @@
+{
+  "domain": "comfoconnect",
+  "name": "Zehnder ComfoAir Q",
+  "codeowners": ["@timvdhoorn"],
+  "config_flow": true,
+  "documentation": "https://github.com/timvdhoorn/comfoconnect-ha",
+  "iot_class": "local_push",
+  "loggers": ["pycomfoconnect"],
+  "requirements": ["pycomfoconnect==0.5.1"],
+  "version": "1.0.0",
+  "issue_tracker": "https://github.com/timvdhoorn/comfoconnect-ha/issues"
+}
