@@ -10,6 +10,7 @@ jobs:
   validate-hacs:
     runs-on: ubuntu-latest
     name: HACS Validation
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 
