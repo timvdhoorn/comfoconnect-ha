@@ -1,63 +1,63 @@
 # ComfoConnect Home Assistant Custom Component
 
-Deze custom component voor Home Assistant biedt ondersteuning voor de Zehnder ComfoAir Q350/450/600 ventilatiesystemen via de ComfoConnect LAN C bridge.
+This custom component for Home Assistant provides support for Zehnder ComfoAir Q350/450/600 ventilation systems via the ComfoConnect LAN C bridge.
 
 ## Credits
 
-Deze integratie is gebaseerd op de [officiële Home Assistant ComfoConnect integratie](https://www.home-assistant.io/integrations/comfoconnect) door [@michaelarnauts](https://github.com/michaelarnauts) en het Home Assistant Core team. De originele code maakt gebruik van de [pycomfoconnect](https://github.com/michaelarnauts/comfoconnect) library.
+This integration is based on the [official Home Assistant ComfoConnect integration](https://www.home-assistant.io/integrations/comfoconnect) by [@michaelarnauts](https://github.com/michaelarnauts) and the Home Assistant Core team. The original code uses the [pycomfoconnect](https://github.com/michaelarnauts/comfoconnect) library.
 
-**Originele auteurs:**
+**Original authors:**
 - Michiel Arnauts ([@michaelarnauts](https://github.com/michaelarnauts))
 - Home Assistant Core Team
 
-**Custom component aanpassingen:**
+**Custom component modifications:**
 - Tim van der Hoorn ([@timvdhoorn](https://github.com/timvdhoorn))
 
-## Belangrijkste wijzigingen
+## Key Changes
 
-Deze versie is een aangepaste variant van de standaard Home Assistant ComfoConnect integratie met de volgende verbeteringen:
+This version is a modified variant of the standard Home Assistant ComfoConnect integration with the following improvements:
 
-- **Device ondersteuning**: Alle entiteiten worden nu gekoppeld aan één apparaat in Home Assistant
-- **Modern config flow**: Eenvoudige configuratie via de UI in plaats van YAML
-- **Alle sensoren beschikbaar**: Alle 20+ sensoren worden automatisch toegevoegd (geen handmatige configuratie meer nodig)
+- **Device support**: All entities are now linked to a single device in Home Assistant
+- **Modern config flow**: Easy configuration via the UI instead of YAML
+- **All sensors available**: All 20+ sensors are automatically added (no manual configuration needed)
 
-## Installatie
+## Installation
 
-### Via HACS (aanbevolen)
+### Via HACS (recommended)
 
 1. Open HACS in Home Assistant
-2. Ga naar "Integrations"
-3. Klik op de drie puntjes rechtsboven en selecteer "Custom repositories"
-4. Voeg deze repository toe met categorie "Integration"
-5. Zoek naar "Zehnder ComfoAir Q" en installeer
-6. Herstart Home Assistant
+2. Go to "Integrations"
+3. Click on the three dots in the top right and select "Custom repositories"
+4. Add this repository with category "Integration"
+5. Search for "Zehnder ComfoAir Q" and install
+6. Restart Home Assistant
 
-### Handmatige installatie
+### Manual installation
 
-1. Download deze repository
-2. Kopieer de map `comfoconnect` naar je `custom_components` map in je Home Assistant configuratiemap
-3. Herstart Home Assistant
+1. Download this repository
+2. Copy the `comfoconnect` folder to your `custom_components` folder in your Home Assistant configuration directory
+3. Restart Home Assistant
 
-## Configuratie
+## Configuration
 
-1. Ga naar **Instellingen** → **Apparaten & Services**
-2. Klik op **+ Integratie toevoegen**
-3. Zoek naar "Zehnder ComfoAir Q"
-4. Voer de volgende gegevens in:
-   - **IP-adres**: Het IP-adres van je ComfoConnect LAN C bridge
-   - **Naam**: Een vriendelijke naam voor je apparaat (standaard: ComfoAirQ)
-   - **Token**: Een unieke 32-karakter hexadecimale string (standaard: 00000000000000000000000000000001)
-   - **User Agent**: Naam van de client (standaard: Home Assistant)
-   - **PIN**: De PIN-code indien ingesteld op je bridge (standaard: 0)
+1. Go to **Settings** → **Devices & Services**
+2. Click on **+ Add Integration**
+3. Search for "Zehnder ComfoAir Q"
+4. Enter the following information:
+   - **IP address**: The IP address of your ComfoConnect LAN C bridge
+   - **Name**: A friendly name for your device (default: ComfoAirQ)
+   - **Token**: A unique 32-character hexadecimal string (default: 00000000000000000000000000000001)
+   - **User Agent**: Name of the client (default: Home Assistant)
+   - **PIN**: The PIN code if set on your bridge (default: 0)
 
-## Beschikbare entiteiten
+## Available Entities
 
-Na configuratie worden de volgende entiteiten automatisch toegevoegd:
+After configuration, the following entities are automatically added:
 
 ### Fan
-- ComfoAir Q ventilator met snelheidsregeling en auto-modus
+- ComfoAir Q fan with speed control and auto mode
 
-### Sensoren
+### Sensors
 - Inside temperature
 - Inside humidity
 - Current RMOT
@@ -80,21 +80,21 @@ Na configuratie worden de volgende entiteiten automatisch toegevoegd:
 - Preheater power usage
 - Preheater energy total
 
-## Apparaatinformatie
+## Device Information
 
-Alle entiteiten worden gegroepeerd onder één apparaat met de volgende informatie:
-- **Fabrikant**: Zehnder
+All entities are grouped under one device with the following information:
+- **Manufacturer**: Zehnder
 - **Model**: ComfoAir Q
-- **Naam**: De door jou gekozen naam
+- **Name**: Your chosen name
 
-## Ondersteuning
+## Support
 
-Voor problemen, vragen of suggesties, open een issue op GitHub.
+For issues, questions, or suggestions, please open an issue on GitHub.
 
-## Licentie
+## License
 
-Deze component is gelicenseerd onder de Apache License 2.0, dezelfde licentie als Home Assistant Core.
+This component is licensed under the Apache License 2.0, the same license as Home Assistant Core.
 
-De originele code is ontwikkeld door Michiel Arnauts en het Home Assistant Core team. Deze custom variant bevat aanpassingen om device support en een moderne configuratie flow toe te voegen.
+The original code was developed by Michiel Arnauts and the Home Assistant Core team. This custom variant includes modifications to add device support and a modern configuration flow.
 
-Zie het [LICENSE](LICENSE) bestand voor meer informatie.
+See the [LICENSE](LICENSE) file for more information.

@@ -1,43 +1,43 @@
 ## Zehnder ComfoAir Q Custom Component
 
-Deze custom component biedt verbeterde ondersteuning voor Zehnder ComfoAir Q350/450/600 ventilatiesystemen in Home Assistant.
+This custom component provides enhanced support for Zehnder ComfoAir Q350/450/600 ventilation systems in Home Assistant.
 
-### Voordelen ten opzichte van standaard integratie
+### Advantages over the standard integration
 
-- **Device Support**: Alle entiteiten worden gekoppeld aan één apparaat
-- **UI Configuratie**: Geen YAML configuratie meer nodig
-- **Alle Sensoren**: Automatisch alle 20+ sensoren beschikbaar
+- **Device Support**: All entities are linked to a single device
+- **UI Configuration**: No YAML configuration required
+- **All Sensors**: Automatically includes all 20+ sensors
 
-### Vereisten
+### Requirements
 
 - ComfoConnect LAN C bridge
-- IP-adres van je bridge
-- Optioneel: 32-karakter token (standaard wordt gebruikt indien niet ingesteld)
+- IP address of your bridge
+- Optional: 32-character token (default is used if not set)
 
-### Configuratie
+### Configuration
 
-Na installatie:
-1. Ga naar **Instellingen** → **Apparaten & Services**
-2. Klik op **+ Integratie toevoegen**
-3. Zoek naar "Zehnder ComfoAir Q"
-4. Voer het IP-adres van je bridge in
-5. Klaar!
+After installation:
+1. Go to **Settings** → **Devices & Services**
+2. Click on **+ Add Integration**
+3. Search for "Zehnder ComfoAir Q"
+4. Enter the IP address of your bridge
+5. Done!
 
-### Beschikbare Entiteiten
+### Available Entities
 
 #### Fan
-- Ventilator bediening met snelheidsregeling
-- Auto modus support
+- Fan control with speed settings
+- Auto mode support
 
-#### Sensoren (automatisch toegevoegd)
-- Temperaturen (binnen, buiten, toevoer, afvoer)
-- Luchtvochtigheid (binnen, buiten, toevoer, afvoer)
-- Ventilator snelheden en duty cycles
-- Luchtstromen
+#### Sensors (automatically added)
+- Temperatures (inside, outside, supply, exhaust)
+- Humidity (inside, outside, supply, exhaust)
+- Fan speeds and duty cycles
+- Airflows
 - Bypass status
-- Filteronderhoud (dagen tot vervanging)
-- Energieverbruik
+- Filter maintenance (days to replacement)
+- Energy consumption
 
 ### Credits
 
-Gebaseerd op de officiële Home Assistant ComfoConnect integratie door Michiel Arnauts.
+Based on the official Home Assistant ComfoConnect integration by Michiel Arnauts.

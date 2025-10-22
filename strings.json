@@ -2,24 +2,24 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configureer Zehnder ComfoAir Q",
-        "description": "Voer de instellingen in om verbinding te maken met je ComfoConnect LAN C bridge.",
+        "title": "Configure Zehnder ComfoAir Q",
+        "description": "Enter the settings to connect to your ComfoConnect LAN C bridge.",
         "data": {
-          "host": "IP-adres",
-          "name": "Naam",
-          "token": "Token (32 tekens)",
+          "host": "IP address",
+          "name": "Name",
+          "token": "Token (32 characters)",
           "user_agent": "User Agent",
           "pin": "PIN code"
         }
       }
     },
     "error": {
-      "cannot_connect": "Kan geen verbinding maken met de ComfoConnect bridge. Controleer het IP-adres.",
-      "invalid_token": "De token moet exact 32 tekens lang zijn.",
-      "unknown": "Er is een onbekende fout opgetreden."
+      "cannot_connect": "Cannot connect to the ComfoConnect bridge. Please check the IP address.",
+      "invalid_token": "The token must be exactly 32 characters long.",
+      "unknown": "An unknown error occurred."
     },
     "abort": {
-      "already_configured": "Dit apparaat is al geconfigureerd."
+      "already_configured": "This device is already configured."
     }
   }
 }
