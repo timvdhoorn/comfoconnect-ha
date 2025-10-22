@@ -27,10 +27,14 @@ This version is a modified variant of the standard Home Assistant ComfoConnect i
 
 1. Open HACS in Home Assistant
 2. Go to "Integrations"
-3. Click on the three dots in the top right and select "Custom repositories"
-4. Add this repository with category "Integration"
-5. Search for "Zehnder ComfoAir Q" and install
-6. Restart Home Assistant
+3. Click on the three dots (⋮) in the top right corner
+4. Select "Custom repositories"
+5. Add the following:
+   - **Repository**: `https://github.com/timvdhoorn/comfoconnect-ha`
+   - **Category**: `Integration`
+6. Click "Add"
+7. Click "Install" on the Zehnder ComfoAir Q card that appears
+8. Restart Home Assistant
 
 ### Manual installation
 
